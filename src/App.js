@@ -89,7 +89,7 @@ class App extends Component {
           )}
 
             { selectedLocation ? (
-            <Popup
+            <Popup className='popup'
             latitude={selectedLocation.geometry.coordinates[1]}
             longitude={selectedLocation.geometry.coordinates[0]}
             closeOnClick={false}
