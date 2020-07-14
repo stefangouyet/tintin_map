@@ -38,7 +38,8 @@ export default class ControlPanel extends PureComponent {
           />
         </div>
         <div className={`input ${allDay ? 'disabled' : ''}`}>
-          <label>Each Day: {formatTime(selectedTime)}</label>
+          {/* <label>Each Day: {formatTime(selectedTime)}</label> */}
+          <label>Each Day: {selectedTime}</label>
           <input
             type="range"
             disabled={allDay}

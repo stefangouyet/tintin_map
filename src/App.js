@@ -1,104 +1,60 @@
 import React, {Component} from 'react';
 import {render} from 'react-dom';
-import MapGL, {Source, Layer} from 'react-map-gl';
+import MapGL, {Source, Layer, Marker,Popup} from 'react-map-gl';
 import ControlPanel from './control-panel';
 import {json as requestJson} from 'd3-request';
 import {heatmapLayer} from './map-style';
+import MapboxLanguage from '@mapbox/mapbox-gl-language';
+import MapboxLanguageControl from 'react-mapbox-gl-language';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faMapMarker} from '@fortawesome/free-solid-svg-icons';
+
+import tintin from "./tintin_data.json";
 
 import styles from './App.css';
 
 const MAPBOX_TOKEN = 'pk.eyJ1Ijoic3RlZmFuZ291eWV0IiwiYSI6ImNrNzlqbm8ycTA5bXUzbXFyMWZreGMxb24ifQ.hGYafiv-Xt5DXaUZgz4M8Q'
 
-function filterFeaturesByDay(featureCollection, time) {
-  const date = new Date(time);
-  const year = date.getFullYear();
-  const month = date.getMonth();
-  const day = date.getDate();
-  const features = featureCollection.features.filter(feature => {
-    const featureDate = new Date(feature.properties.time);
-    return (
-      featureDate.getFullYear() === year &&
-      featureDate.getMonth() === month &&
-      featureDate.getDate() === day
-    );
-  });
-  return {type: 'FeatureCollection', features};
-}
-
 class App extends Component {
-  constructor(props) {
-    super(props);
-    const current = new Date().getTime();
-
-    this.state = {
+  
+  state = {
       viewport: {
-        latitude: 40,
-        longitude: -100,
-        zoom: 3,
+        latitude: 0,
+        longitude: 0,
+        zoom: 2,
         bearing: 0,
-        pitch: 0
+        pitch: 0,
+        minZoom:1.5
       },
-      allDay: false,
-      startTime: current,
-      endTime: current,
-      selectedTime: current,
-      earthquakes: null
+      startTime: 1930,
+      endTime: 1989,
+      selectedTime: 1930,
+      earthquakes: null,
+      selectedLocation: null
     };
 
-    
+ 
 
-    this._handleChangeDay = this._handleChangeDay.bind(this);
-    this._handleChangeAllDay = this._handleChangeAllDay.bind(this);
+  componentDidMount() {
+    console.log(tintin.features)
+    this.setState({
+      data: tintin,
+      earthquakes:tintin
+    })
+    console.log(this.state.data)
   }
 
   mapRef = React.createRef();
 
-  componentDidMount() {
-    requestJson(
-      'https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson',
-      (error, response) => {
-        if (!error) {
-          // Note: In a real application you would do a validation of JSON data before doing anything with it,
-          // but for demonstration purposes we ingore this part here and just trying to select needed data...
-          const features = response.features;
-          const endTime = features[0].properties.time;
-          const startTime = features[features.length - 1].properties.time;
-
-          this.setState({
-            data: response,
-            earthquakes: response,
-            endTime,
-            startTime,
-            selectedTime: endTime
-          });
-        }
-      }
-      
-    );
-  }
-
-  _onViewportChange = viewport => this.setState({viewport});
-
-  _handleChangeDay = time => {
-    this.setState({selectedTime: time});
-    if (this.state.earthquakes) {
-      this.setState({data: filterFeaturesByDay(this.state.earthquakes, time)});
-    }
+  handleViewportChange = viewport => {
+    this.setState({
+      viewport: { ...this.state.viewport, ...viewport }
+    });
   };
 
-  _handleChangeAllDay = allDay => {
-    this.setState({allDay});
-    if (this.state.earthquakes) {
-      this.setState({
-        data: allDay
-          ? this.state.earthquakes
-          : filterFeaturesByDay(this.state.earthquakes, this.state.selectedTime)
-      });
-    }
-  };
 
   render() {
-    const {viewport, data, allDay, selectedTime, startTime, endTime} = this.state;
+    const {viewport, data, selectedTime, startTime, endTime, selectedLocation} = this.state;
 
     return (
       // <div style={{height: '100%', position: 'relative'}}>
@@ -109,24 +65,57 @@ class App extends Component {
           height="100%"
           ref = {this.mapRef}
           mapStyle="mapbox://styles/stefangouyet/ckck1kga92ird1irumuxg4ni1"
-          onViewportChange={this._onViewportChange}
+          onViewportChange={this.handleViewportChange}
           mapboxApiAccessToken={MAPBOX_TOKEN}
-          
+          onClick={() => this.setState({ selectedLocation: null })}
         >
-          {data && (
-            <Source type="geojson" data={data}>
-              <Layer {...heatmapLayer} />
-            </Source>
+          {data && data.features.map(location =>
+            <Marker
+            key = {location.properties.EN_Location}
+            latitude={location.geometry.coordinates[1]}
+            longitude={location.geometry.coordinates[0]}
+            >
+              <FontAwesomeIcon 
+              icon={faMapMarker} 
+              size='1x' 
+              color='black' 
+              onClick={e => {
+                          e.preventDefault();
+                          this.setState({selectedLocation:location})
+          }}
+              />
+            
+            </Marker>
           )}
+
+            { selectedLocation ? (
+            <Popup
+            latitude={selectedLocation.geometry.coordinates[1]}
+            longitude={selectedLocation.geometry.coordinates[0]}
+            closeOnClick={false}
+            onClose={() => this.setState({selectedLocation: null})}>
+              <button className='button'>
+                  <h1>{selectedLocation.properties['EN_Name']}</h1>
+                  <h3>{selectedLocation.properties['Year']}</h3>
+                  {/* <img 
+                  className='photo' 
+                  src={require('./images/'+selectedBuilding.properties['Building Name'] + '.jpg')} 
+                  alt='./images/general_deco.jpg'  /> */}
+                  
+              </button>
+            </Popup>
+          ) : null
+        }
+
         </MapGL>
         <ControlPanel
           containerComponent={this.props.containerComponent}
           startTime={startTime}
           endTime={endTime}
           selectedTime={selectedTime}
-          allDay={allDay}
-          onChangeDay={this._handleChangeDay}
-          onChangeAllDay={this._handleChangeAllDay}
+          //allDay={allDay}
+          // onChangeDay={this._handleChangeDay}
+          // onChangeAllDay={this._handleChangeAllDay}
         />
       </div>
     );
