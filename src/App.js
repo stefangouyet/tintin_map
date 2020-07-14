@@ -97,11 +97,14 @@ class App extends Component {
               <button className='button'>
                   <h1>{selectedLocation.properties['EN_Name']}</h1>
                   <h3>{selectedLocation.properties['Year']}</h3>
-                  {/* <img 
+                  <img 
                   className='photo' 
-                  src={require('./images/'+selectedBuilding.properties['Building Name'] + '.jpg')} 
-                  alt='./images/general_deco.jpg'  /> */}
+                  //src={require('./images/' + selectedLocation.properties['FR_Name'] + '.jpeg')} 
+                  src={require('./images/' + 'Tintin Au Congo' + '.jpeg')} 
+                  // alt='./images/general_deco.jpg'  
                   
+                  />
+                  {console.log(selectedLocation.properties['FR_Name'])}
               </button>
             </Popup>
           ) : null
