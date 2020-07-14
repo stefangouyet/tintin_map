@@ -94,17 +94,19 @@ class App extends Component {
             longitude={selectedLocation.geometry.coordinates[0]}
             closeOnClick={false}
             onClose={() => this.setState({selectedLocation: null})}>
+              {console.log(selectedLocation.properties['FR_Name'])}
               <button className='button'>
                   <h1>{selectedLocation.properties['EN_Name']}</h1>
                   <h3>{selectedLocation.properties['Year']}</h3>
                   <img 
                   className='photo' 
-                  //src={require('./images/' + selectedLocation.properties['FR_Name'] + '.jpeg')} 
+                  // src={require('./images/' + selectedLocation.properties['FR_Name'].toString() + '.jpeg')} 
                   src={require('./images/' + 'Tintin Au Congo' + '.jpeg')} 
                   // alt='./images/general_deco.jpg'  
                   
                   />
-                  {console.log(selectedLocation.properties['FR_Name'])}
+                  {/* {console.log(selectedLocation.properties['FR_Name'])} */}
+                 
               </button>
             </Popup>
           ) : null
