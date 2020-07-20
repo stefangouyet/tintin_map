@@ -117,7 +117,7 @@ class App extends Component {
               {console.log(selectedLocation.properties['FR_Name'])}
               {console.log('./images/' + selectedLocation.properties['FR_Name'].toString() + '.jpeg')}
               <button className='button'>
-                  <h1>{selectedLocation.properties['EN_Name']}</h1>
+                  {/* <h1>{selectedLocation.properties['EN_Name']}</h1> */}
                   <h3>{selectedLocation.properties['Year']}</h3>
                   <img 
                   className='photo' 
