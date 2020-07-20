@@ -28,9 +28,8 @@ class App extends Component {
       },
       startTime: 1930,
       endTime: 1989,
-      selectedTime: 1930,
-      earthquakes: null,
-      selectedLocation: null
+      selectedTime: 1950,
+      language: 'EN'
     };
 
  
@@ -44,12 +43,33 @@ class App extends Component {
     console.log(this.state.data)
   }
 
+  
+
   mapRef = React.createRef();
+
+  filterYear = (data, year) => {
+    const features = data.features.filter(feature => {
+      console.log(parseInt(feature.properties.Year,10))
+      return (
+        parseInt(feature.properties.Year,10) < parseInt(year,10) //=== year
+      )})
+      return {type: 'FeatureCollection', features};
+  }
 
   handleViewportChange = viewport => {
     this.setState({
       viewport: { ...this.state.viewport, ...viewport }
     });
+  };
+  
+  handleTimeChange = event => {
+
+    this.setState({
+      selectedTime: parseInt(event.target.value,10), //event.target.value,//
+      data: this.filterYear(tintin,parseInt(event.target.value,10)), //event.target.value)//
+      //popupWinner: null
+
+    })
   };
 
 
@@ -95,17 +115,18 @@ class App extends Component {
             closeOnClick={false}
             onClose={() => this.setState({selectedLocation: null})}>
               {console.log(selectedLocation.properties['FR_Name'])}
+              {console.log('./images/' + selectedLocation.properties['FR_Name'].toString() + '.jpeg')}
               <button className='button'>
                   <h1>{selectedLocation.properties['EN_Name']}</h1>
                   <h3>{selectedLocation.properties['Year']}</h3>
                   <img 
                   className='photo' 
-                  // src={require('./images/' + selectedLocation.properties['FR_Name'].toString() + '.jpeg')} 
-                  src={require('./images/' + 'Tintin Au Congo' + '.jpeg')} 
+                  src={require('./images/' + selectedLocation.properties['FR_Name'].toString() + '.jpeg')} 
+                  // src={require('./images/' + 'Tintin Au Congo' + '.jpeg')} 
                   // alt='./images/general_deco.jpg'  
                   
                   />
-                  {/* {console.log(selectedLocation.properties['FR_Name'])} */}
+                  
                  
               </button>
             </Popup>
@@ -119,7 +140,7 @@ class App extends Component {
           endTime={endTime}
           selectedTime={selectedTime}
           //allDay={allDay}
-          // onChangeDay={this._handleChangeDay}
+          onChangeDay={this.handleTimeChange}
           // onChangeAllDay={this._handleChangeAllDay}
         />
       </div>

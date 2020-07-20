@@ -22,11 +22,6 @@ export default class ControlPanel extends PureComponent {
     return (
       <div className="control-panel">
         <h3>Les Adventures de Tintin</h3>
-        {/* <p>
-          Map showing earthquakes
-          <br />
-          from <b>{formatTime(startTime)}</b> to <b>{formatTime(endTime)}</b>.
-        </p> */}
         <hr />
         <div className="input">
           <label>FR / EN</label>
@@ -37,33 +32,23 @@ export default class ControlPanel extends PureComponent {
             onChange={evt => onChangeAllDay(evt.target.checked)}
           />
         </div>
-        <div className={`input ${allDay ? 'disabled' : ''}`}>
-          {/* <label>Each Day: {formatTime(selectedTime)}</label> */}
-          <label>Each Day: {selectedTime}</label>
+        <div>
+       
+          <label>Year: 1930 - {selectedTime}</label>
           <input
             type="range"
-            disabled={allDay}
-            min={1}
-            max={days}
+            id = 'slider'
+            //disabled={allDay}
+            min={1930}
+            max={1989}
             step={1}
-            onChange={_onChangeDay}
+            defaultValue={this.selectedTime}
+            onChange={onChangeDay}
           />
         </div>
-        <hr />
-        {/* <p>
-          Data source:{' '}
-          <a href="https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson">
-            earthquakes.geojson
-          </a>
-        </p>
-        <div className="source-link">
-          <a
-            href="https://github.com/uber/react-map-gl/tree/5.2-release/examples/heatmap"
-            target="_new"
-          >
-            View Code ↗
-          </a>
-        </div> */}
+        
+        <hr/>
+        <i>Note: Fictional locations are approximate/guessed based on factors</i>
       </div>
     );
   }
