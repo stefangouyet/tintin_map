@@ -41,7 +41,8 @@ input {
 .popup {
   width: 20%;
   margin: 0 auto;
-  border:none
+  border:none;
+  opacity: 0.85
   }
   
 .photo {
