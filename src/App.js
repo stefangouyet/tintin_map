@@ -19,9 +19,9 @@ class App extends Component {
   
   state = {
       viewport: {
-        latitude: 0,
+        latitude: 20,
         longitude: 0,
-        zoom: 2,
+        zoom: 1.5,
         bearing: 0,
         pitch: 0,
         minZoom:1.5
