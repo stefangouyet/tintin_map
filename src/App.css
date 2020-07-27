@@ -37,3 +37,18 @@ input {
   opacity: .5;
   cursor: not-allowed;
 }
+
+.popup {
+  width: 20%;
+  margin: 0 auto;
+  border:none
+  }
+  
+.photo {
+  width:100%
+  }
+  
+.button {
+  border: none;
+  background-color: #ffffff;
+  }
