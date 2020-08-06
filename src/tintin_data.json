@@ -7,10 +7,10 @@
         "EN_Name": "Tintin in the Land of the Soviets",
         "FR_Name": "Tintin au pays des Soviets",
         "Year": "1929–1930",
-        "Year Finished": "1930",
-        "Date": "",
-        "EN_Location": "Soviet Union",
-        "FR_Location": "Union soviétique",
+        "Year Completed": "1930",
+        "": "",
+        "EN_Location": "Moscow, Soviet Union",
+        "FR_Location": "Moscou, Union soviétique",
         "EN_Link": "http://en.tintin.com/albums/show/id/25/page/0/0/tintin-in-the-land-of-the-soviets",
         "FR_Link": "https://www.tintin.com/fr/albums/tintin-au-pays-des-soviets"
       },
@@ -28,9 +28,9 @@
         "EN_Name": "Tintin in the Congo",
         "FR_Name": "Tintin au Congo",
         "Year": "1930–1931",
-        "Year Finished": "1931",
-        "Date": "",
-        "EN_Location": "Congo",
+        "Year Completed": "1931",
+        "": "",
+        "EN_Location": "DR Congo",
         "FR_Location": "Congo",
         "EN_Link": "http://en.tintin.com/albums/show/id/26/page/0/0/tintin-in-the-congo",
         "FR_Link": "https://www.tintin.com/fr/albums/tintin-au-congo"
@@ -49,9 +49,9 @@
         "EN_Name": "Tintin in America",
         "FR_Name": "Tintin en Amérique",
         "Year": "1931–1932",
-        "Year Finished": "1932",
-        "Date": "",
-        "EN_Location": "Chicago, United States",
+        "Year Completed": "1932",
+        "": "",
+        "EN_Location": "Chicago, USA",
         "FR_Location": "Chicago, États-Unis",
         "EN_Link": "http://en.tintin.com/albums/show/id/27/page/0/0/tintin-in-america",
         "FR_Link": ""
@@ -59,8 +59,323 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.005974,
-          40.71274
+          -87.6298,
+          41.8781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "Tintin in America",
+        "FR_Name": "Tintin en Amérique",
+        "Year": "1931–1932",
+        "Year Completed": "1932",
+        "": "",
+        "EN_Location": "Midwest, USA",
+        "FR_Location": "Midwest, États-Unis",
+        "EN_Link": "http://en.tintin.com/albums/show/id/27/page/0/0/tintin-in-america",
+        "FR_Link": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.026312,
+          40.850556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "Cigars of the Pharaoh",
+        "FR_Name": "Les Cigares du Pharaon",
+        "Year": "1932–1934",
+        "Year Completed": "1934",
+        "": "",
+        "EN_Location": "Egypt",
+        "FR_Location": "l'Égypte",
+        "EN_Link": "http://en.tintin.com/albums/show/id/28/page/0/0/cigars-of-the-pharaoh",
+        "FR_Link": "https://www.tintin.com/fr/albums/les-cigares-du-pharaon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.297872,
+          31.266116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "Cigars of the Pharaoh",
+        "FR_Name": "Les Cigares du Pharaon",
+        "Year": "1932–1934",
+        "Year Completed": "1934",
+        "": "",
+        "EN_Location": "Arabia",
+        "FR_Location": "l'Arabie",
+        "EN_Link": "http://en.tintin.com/albums/show/id/28/page/0/0/cigars-of-the-pharaoh",
+        "FR_Link": "https://www.tintin.com/fr/albums/les-cigares-du-pharaon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.83923,
+          28.630826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "Cigars of the Pharaoh",
+        "FR_Name": "Les Cigares du Pharaon",
+        "Year": "1932–1934",
+        "Year Completed": "1934",
+        "": "",
+        "EN_Location": "India",
+        "FR_Location": "l'Inde",
+        "EN_Link": "http://en.tintin.com/albums/show/id/28/page/0/0/cigars-of-the-pharaoh",
+        "FR_Link": "https://www.tintin.com/fr/albums/les-cigares-du-pharaon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.344341,
+          22.454296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "The Blue Lotus",
+        "FR_Name": "Le Lotus Bleu",
+        "Year": "1932–1934",
+        "Year Completed": "1934",
+        "": "",
+        "EN_Location": "India",
+        "FR_Location": "l'Inde",
+        "EN_Link": "http://en.tintin.com/albums/show/id/29/page/0/0/the-blue-lotus",
+        "FR_Link": "https://www.tintin.com/fr/albums/le-lotus-bleu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.344341,
+          22.554296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "The Blue Lotus",
+        "FR_Name": "Le Lotus Bleu",
+        "Year": "1934–1935",
+        "Year Completed": "1935",
+        "": "",
+        "EN_Location": "Shanghai, China",
+        "FR_Location": "Shanghai, Chine",
+        "EN_Link": "http://en.tintin.com/albums/show/id/29/page/0/0/the-blue-lotus",
+        "FR_Link": "https://www.tintin.com/fr/albums/le-lotus-bleu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.575316,
+          31.066496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "The Blue Lotus",
+        "FR_Name": "Le Lotus Bleu",
+        "Year": "1934–1935",
+        "Year Completed": "1935",
+        "": "",
+        "EN_Location": "Hukou, China",
+        "FR_Location": "Xian de Hukou, Chine",
+        "EN_Link": "http://en.tintin.com/albums/show/id/29/page/0/0/the-blue-lotus",
+        "FR_Link": "https://www.tintin.com/fr/albums/le-lotus-bleu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.369945,
+          29.765723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "The Broken Ear",
+        "FR_Name": "L'Oreille Cassée",
+        "Year": "1935–1937",
+        "Year Completed": "1937",
+        "": "",
+        "EN_Location": "San Theodoros",
+        "FR_Location": "San Theodoros",
+        "EN_Link": "http://en.tintin.com/albums/show/id/30/page/0/0/the-broken-ear",
+        "FR_Link": "https://www.tintin.com/fr/albums/l-oreille-cassee"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.539199,
+          2.854577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "The Black Island",
+        "FR_Name": "L'Île Noire",
+        "Year": "1937–1938",
+        "Year Completed": "1938",
+        "": "",
+        "EN_Location": "Scotland",
+        "FR_Location": "L'Écosse",
+        "EN_Link": "http://en.tintin.com/albums/show/id/31/page/0/0/the-black-island",
+        "FR_Link": "https://www.tintin.com/fr/albums/l-ile-noire"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.952057,
+          58.802213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "King Ottokar's Sceptre",
+        "FR_Name": "Le Sceptre D'Ottokar",
+        "Year": "1938–1939",
+        "Year Completed": "1939",
+        "": "",
+        "EN_Location": "Syldavia",
+        "FR_Location": "Syldavie",
+        "EN_Link": "http://en.tintin.com/albums/show/id/32/page/0/0/king-ottokar-s-sceptre",
+        "FR_Link": "https://www.tintin.com/fr/albums/le-sceptre-d-ottokar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.064573,
+          43.292694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "King Ottokar's Sceptre",
+        "FR_Name": "Le Sceptre D'Ottokar",
+        "Year": "1938–1939",
+        "Year Completed": "1939",
+        "": "",
+        "EN_Location": "Borduria",
+        "FR_Location": "Bordurie",
+        "EN_Link": "http://en.tintin.com/albums/show/id/32/page/0/0/king-ottokar-s-sceptre",
+        "FR_Link": "https://www.tintin.com/fr/albums/le-sceptre-d-ottokar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.978027,
+          42.712987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "The Crab with the Golden Claws",
+        "FR_Name": "Le Crabe aux pinces d'or",
+        "Year": "1940–1941",
+        "Year Completed": "1941",
+        "": "",
+        "EN_Location": "Morocco",
+        "FR_Location": "Maroque",
+        "EN_Link": "http://en.tintin.com/albums/show/id/33/page/0/0/the-crab-with-the-golden-claws",
+        "FR_Link": "https://www.tintin.com/fr/albums/le-crabe-aux-pinces-d-or"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.392818,
+          34.63101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "The Crab with the Golden Claws",
+        "FR_Name": "Le Crabe aux pinces d'or",
+        "Year": "1940–1941",
+        "Year Completed": "1941",
+        "": "",
+        "EN_Location": "Sahara Desert",
+        "FR_Location": "Le Sahara",
+        "EN_Link": "http://en.tintin.com/albums/show/id/33/page/0/0/the-crab-with-the-golden-claws",
+        "FR_Link": "https://www.tintin.com/fr/albums/le-crabe-aux-pinces-d-or"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.252011,
+          25.428343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "The Shooting Star",
+        "FR_Name": "L'Étoile Mystérieuse",
+        "Year": "1941–1942",
+        "Year Completed": "1942",
+        "": "",
+        "EN_Location": "Akureyri, Iceland",
+        "FR_Location": "Akureyri, Islande",
+        "EN_Link": "http://en.tintin.com/albums/show/id/34/page/0/0/the-shooting-star",
+        "FR_Link": "https://www.tintin.com/fr/albums/l-etoile-mysterieuse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -18.121435,
+          65.697275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "The Shooting Star",
+        "FR_Name": "L'Étoile Mystérieuse",
+        "Year": "1941–1942",
+        "Year Completed": "1942",
+        "": "",
+        "EN_Location": "Arctic Ocean",
+        "FR_Location": "Océan Arctique",
+        "EN_Link": "http://en.tintin.com/albums/show/id/34/page/0/0/the-shooting-star",
+        "FR_Link": "https://www.tintin.com/fr/albums/l-etoile-mysterieuse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.344293,
+          76.814934
         ]
       }
     },
@@ -70,39 +385,39 @@
         "EN_Name": "The Secret of the Unicorn",
         "FR_Name": "Le Secret de La Licorne",
         "Year": "1942–1943",
-        "Year Finished": "1943",
-        "Date": "1943/12/12 00:00:00",
-        "EN_Location": "Bruxelles",
-        "FR_Location": "",
+        "Year Completed": "1943",
+        "": "",
+        "EN_Location": "Marlinspike Hall, Belgium",
+        "FR_Location": "Château de Moulinsart, Belgique",
         "EN_Link": "http://en.tintin.com/albums/show/id/35/page/0/0/the-secret-of-the-unicorn",
         "FR_Link": "https://www.tintin.com/fr/albums/le-secret-de-la-licorne"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          4.3517,
-          50.8503
+          4.324763,
+          50.697802
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "EN_Name": "The Secret of the Unicorn",
-        "FR_Name": "Le Secret de La Licorne",
-        "Year": "1942–1943",
-        "Year Finished": "1943",
-        "Date": "1943/12/12 00:00:00",
-        "EN_Location": "Loire Valley",
-        "FR_Location": "",
-        "EN_Link": "http://en.tintin.com/albums/show/id/35/page/0/0/the-secret-of-the-unicorn",
-        "FR_Link": "https://www.tintin.com/fr/albums/le-secret-de-la-licorne"
+        "EN_Name": "Red Rackham's Treasure",
+        "FR_Name": "Le Trésor de Rackham le Rouge",
+        "Year": "1943",
+        "Year Completed": "1943",
+        "": "",
+        "EN_Location": "West Indies",
+        "FR_Location": "Les Antilles",
+        "EN_Link": "http://en.tintin.com/albums/show/id/36/page/0/0/red-rackham-s-treasure",
+        "FR_Link": "https://www.tintin.com/fr/albums/le-tresor-de-rackham-le-rouge"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.458,
-          47.5002
+          -70.870833,
+          20.628333
         ]
       }
     },
@@ -112,9 +427,9 @@
         "EN_Name": "Prisoners of the Sun",
         "FR_Name": "Le Temple du Soleil",
         "Year": "1946–1948",
-        "Year Finished": "1948",
-        "Date": "1948/12/12 00:00:00",
-        "EN_Location": "",
+        "Year Completed": "1948",
+        "": "",
+        "EN_Location": "Peru",
         "FR_Location": "Perou",
         "EN_Link": "http://en.tintin.com/albums/show/id/38/page/0/0/prisoners-of-the-sun",
         "FR_Link": "https://www.tintin.com/fr/albums/le-temple-du-soleil"
@@ -130,21 +445,273 @@
     {
       "type": "Feature",
       "properties": {
+        "EN_Name": "Land of Black Gold",
+        "FR_Name": "Tintin au pays de l'or noir",
+        "Year": "1948–1950",
+        "Year Completed": "1950",
+        "": "",
+        "EN_Location": "Khemed",
+        "FR_Location": "Khemed",
+        "EN_Link": "http://en.tintin.com/albums/show/id/39/page/0/0/land-of-black-gold",
+        "FR_Link": "https://www.tintin.com/fr/albums/tintin-au-pays-de-l-or-noir"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.297682,
+          26.195678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "Destination Moon",
+        "FR_Name": "Objectif Lune",
+        "Year": "1950–1952",
+        "Year Completed": "1952",
+        "": "",
+        "EN_Location": "Syldavia",
+        "FR_Location": "Syldavie",
+        "EN_Link": "http://en.tintin.com/albums/show/id/40/page/0/0/destination-moon",
+        "FR_Link": "https://www.tintin.com/fr/albums/objectif-lune"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.064573,
+          43.392694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "Explorers on the Moon",
+        "FR_Name": "On a marche sur la Lune",
+        "Year": "1952–1953",
+        "Year Completed": "1953",
+        "": "",
+        "EN_Location": "Syldavia",
+        "FR_Location": "Syldavie",
+        "EN_Link": "http://en.tintin.com/albums/show/id/41/page/0/0/explorers-on-the-moon",
+        "FR_Link": "https://www.tintin.com/fr/albums/on-a-marche-sur-la-lune"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.064573,
+          43.492694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "The Calculus Affair",
+        "FR_Name": "L'Affaire Tournesol",
+        "Year": "1954–1956",
+        "Year Completed": "1956",
+        "": "",
+        "EN_Location": "Switzerland",
+        "FR_Location": "Suisse",
+        "EN_Link": "http://en.tintin.com/albums/show/id/42/page/0/0/the-calculus-affair",
+        "FR_Link": "https://www.tintin.com/fr/albums/l-affaire-tournesol"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.149905,
+          46.232986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "The Calculus Affair",
+        "FR_Name": "L'Affaire Tournesol",
+        "Year": "1954–1956",
+        "Year Completed": "1956",
+        "": "",
+        "EN_Location": "Syldavia",
+        "FR_Location": "Syldavie",
+        "EN_Link": "http://en.tintin.com/albums/show/id/42/page/0/0/the-calculus-affair",
+        "FR_Link": "https://www.tintin.com/fr/albums/l-affaire-tournesol"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.064573,
+          43.592694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "The Calculus Affair",
+        "FR_Name": "L'Affaire Tournesol",
+        "Year": "1954–1956",
+        "Year Completed": "1956",
+        "": "",
+        "EN_Location": "Borduria",
+        "FR_Location": "Bordurie",
+        "EN_Link": "http://en.tintin.com/albums/show/id/42/page/0/0/the-calculus-affair",
+        "FR_Link": "https://www.tintin.com/fr/albums/l-affaire-tournesol"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.978027,
+          42.812987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "EN_Name": "The Red Sea Sharks",
         "FR_Name": "Coke en stock",
         "Year": "1956–1958",
-        "Year Finished": "1958",
-        "Date": "1958/12/12 00:00:00",
-        "EN_Location": "",
-        "FR_Location": "Bruxelles, ",
+        "Year Completed": "1958",
+        "": "",
+        "EN_Location": "Khemed",
+        "FR_Location": "Khemed",
         "EN_Link": "http://en.tintin.com/albums/show/id/43/page/0/0/the-red-sea-sharks",
         "FR_Link": "https://www.tintin.com/fr/albums/coke-en-stock"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          4.3517,
-          50.8503
+          37.297682,
+          26.295678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "The Red Sea Sharks",
+        "FR_Name": "Coke en stock",
+        "Year": "1956–1958",
+        "Year Completed": "1958",
+        "": "",
+        "EN_Location": "Red Sea",
+        "FR_Location": "Mer Rouge",
+        "EN_Link": "http://en.tintin.com/albums/show/id/43/page/0/0/the-red-sea-sharks",
+        "FR_Link": "https://www.tintin.com/fr/albums/coke-en-stock"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.359705,
+          22.42136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "Tintin in Tibet",
+        "FR_Name": "Tintin au Tibet",
+        "Year": "1958–1959",
+        "Year Completed": "1959",
+        "": "",
+        "EN_Location": "French Alps",
+        "FR_Location": "Alpes Françaises",
+        "EN_Link": "http://en.tintin.com/albums/show/id/44/page/0/0/tintin-in-tibet",
+        "FR_Link": "https://www.tintin.com/fr/albums/tintin-au-tibet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.701123,
+          45.776424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "Tintin in Tibet",
+        "FR_Name": "Tintin au Tibet",
+        "Year": "1958–1959",
+        "Year Completed": "1959",
+        "": "",
+        "EN_Location": "Kathmandu, Nepal",
+        "FR_Location": "Katmandou, Népal",
+        "EN_Link": "http://en.tintin.com/albums/show/id/44/page/0/0/tintin-in-tibet",
+        "FR_Link": "https://www.tintin.com/fr/albums/tintin-au-tibet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.323322,
+          27.716166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "Tintin in Tibet",
+        "FR_Name": "Tintin au Tibet",
+        "Year": "1958–1959",
+        "Year Completed": "1959",
+        "": "",
+        "EN_Location": "Tibet",
+        "FR_Location": "Tibet",
+        "EN_Link": "http://en.tintin.com/albums/show/id/44/page/0/0/tintin-in-tibet",
+        "FR_Link": "https://www.tintin.com/fr/albums/tintin-au-tibet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.534341,
+          32.891441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "Flight 714 to Sydney",
+        "FR_Name": "Vol 714 pour Sydney",
+        "Year": "1966–1967",
+        "Year Completed": "1967",
+        "": "",
+        "EN_Location": "Jakarta, Indonesia",
+        "FR_Location": "Djakarta, Indonésie",
+        "EN_Link": "http://en.tintin.com/albums/show/id/46/page/0/0/flight-714",
+        "FR_Link": "https://www.tintin.com/fr/albums/vol-714-pour-sydney"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.65318,
+          -6.127763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EN_Name": "Flight 714 to Sydney",
+        "FR_Name": "Vol 714 pour Sydney",
+        "Year": "1966–1967",
+        "Year Completed": "1967",
+        "": "",
+        "EN_Location": "Island of Pulau-pulau Bompa",
+        "FR_Location": "L'Île Pulau-pulau Bompa",
+        "EN_Link": "http://en.tintin.com/albums/show/id/46/page/0/0/flight-714",
+        "FR_Link": "https://www.tintin.com/fr/albums/vol-714-pour-sydney"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.546703,
+          3.481879
         ]
       }
     },
@@ -154,18 +721,18 @@
         "EN_Name": "Tintin and the Picaros",
         "FR_Name": "Tintin et les Picaros",
         "Year": "1975–1976",
-        "Year Finished": "1976",
-        "Date": "1976/12/12 00:00:00",
-        "EN_Location": "",
+        "Year Completed": "1976",
+        "": "",
+        "EN_Location": "San Theodoros",
         "FR_Location": "San Theodoros",
-        "EN_Link": "",
+        "EN_Link": "http://en.tintin.com/albums/show/id/47/page/0/0/tintin-and-the-picaros",
         "FR_Link": "https://www.tintin.com/fr/albums/tintin-et-les-picaros"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -58.589199,
-          2.874577
+          -58.539199,
+          2.954577
         ]
       }
     }
