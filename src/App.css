@@ -4,7 +4,7 @@
   right: 0;
   max-width: 320px;
   background: #E7E7DD;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   padding: 12px 24px;
   margin: 20px;
   font-size: 13px;
@@ -32,18 +32,20 @@ input {
 .popup {
   width: 20%;
   margin: 0 auto;
-  border:none;
+  border: none;
   padding: 0%;
   opacity: 0.95;
-  }
-  
+}
+
 .photo {
-  width:90%
-  }
-  
+  width: 90%
+}
+
 .button {
   border: none;
-  background-color:'#7D90A8';
-  }
+  background-color: '#7D90A8';
+}
 
-  
+.map-marker {
+  cursor: pointer;
+}
