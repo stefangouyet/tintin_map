@@ -35,6 +35,7 @@ class App extends Component {
   };
 
   mapRef = React.createRef();
+  mapboxApiAccessToken = 'pk.eyJ1Ijoic3RlZmFuZ291eWV0IiwiYSI6ImNscHF0dHhhNjAzeGoyam8wcTFqZjlnbW4ifQ.NbIIrM1ACugwdFe6_V2d3Q' // public
   clusterHeight = 32;
   clusterWidth = 24;
   uniqueBooks = tintinData.features.reduce((accumulator, current) => {
@@ -126,7 +127,7 @@ class App extends Component {
             ref={this.onMapRefChange}
             mapStyle="mapbox://styles/stefangouyet/ckck1kga92ird1irumuxg4ni1"
             onViewportChange={this.handleViewportChange}
-            mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+            mapboxApiAccessToken={this.mapboxApiAccessToken}
             onClick={this.handleMapClick}
           >
             {data &&
