@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@mapbox/mapbox-gl-language": "^0.10.1",
+    "@mui/lab": "^5.0.0-alpha.168",
+    "@mui/material": "^5.15.13",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -20,7 +24,8 @@
     "react-mapbox-gl": "^4.8.6",
     "react-mapbox-gl-geocoder": "^1.1.0",
     "react-mapbox-gl-language": "^1.0.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "tss-react": "^4.9.4"
   },
   "scripts": {
     "start": "react-scripts start",

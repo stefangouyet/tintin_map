@@ -8,8 +8,8 @@ export default class SideBar extends PureComponent {
     return (
       <div className="sidebar">
         <h3>Les Adventures de Tintin</h3>
-        <hr />
-        <div>
+        {/* <hr /> */}
+        {/* <div>
           <label>Year: 1930 - {selectedTime}</label>
           <input
             type="range"
@@ -21,9 +21,9 @@ export default class SideBar extends PureComponent {
             value={selectedTime}
             onChange={onChangeDay}
           />
-        </div>
+        </div> */}
 
-        <hr />
+        {/* <hr /> */}
         <i>Note: Fictional locations are approximate</i>
       </div>
     );
